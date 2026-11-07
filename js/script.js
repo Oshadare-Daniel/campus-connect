@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .value.trim();
 
             formFeedback.textContent =
-                `Thank you, ${name}! Your message has passed the demo form validation. Actual message delivery will be available after backend integration.`;
+                `Thank you, ${name}! Your message/request has been successfully submitted. We’ll review it and get back to you shortly.`;
 
             formFeedback.classList.add("success");
 
