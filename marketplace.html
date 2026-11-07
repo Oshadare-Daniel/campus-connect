@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover products and services offered within the Campus Connect student marketplace.">
+    <meta name="theme-color" content="#102b46">
+    <title>Marketplace | Campus Connect</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/marketplace.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+        <a href="index.html" class="brand" aria-label="Campus Connect homepage">
+            <img src="images/campus-connect-logo.svg" alt="Campus Connect">
+        </a>
+
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="marketplace.html" class="active">Marketplace</a>
+            <a href="community.html">Community</a>
+            <a href="events.html">Events</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="contact.html" class="nav-contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="page-hero-image" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=2000&q=85');">
+            <div class="page-hero-overlay"></div>
+            <div class="container page-hero-content">
+                <span class="eyebrow light-eyebrow">CAMPUS MARKETPLACE</span>
+                <h1>Discover. Shop. <span>Connect.</span></h1>
+                <p>Explore products and services within your campus community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">STUDENT MARKETPLACE</span>
+                <h2>Find something useful.</h2>
+                <p>Browse the sample listings below and discover what's available.</p>
+            </div>
+
+            <div class="marketplace-toolbar">
+                <div class="marketplace-search">
+                    <span aria-hidden="true">⌕</span>
+                    <input type="search" id="product-search" placeholder="Search products..." aria-label="Search products">
+                </div>
+
+                <div class="marketplace-filters" aria-label="Filter products by category">
+                    <button class="filter-btn active" data-filter="all" type="button">All</button>
+                    <button class="filter-btn" data-filter="electronics" type="button">Electronics</button>
+                    <button class="filter-btn" data-filter="fashion" type="button">Fashion</button>
+                    <button class="filter-btn" data-filter="books" type="button">Books</button>
+                    <button class="filter-btn" data-filter="services" type="button">Services</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+
+                <article class="product-card" data-category="electronics" data-name="wireless headphones">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+                             alt="Wireless headphones" loading="lazy">
+                        <span class="product-tag">Electronics</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">ELECTRONICS</p>
+                        <h3>Wireless Headphones</h3>
+                        <p>Comfortable headphones for music, study and entertainment.</p>
+                        <div class="product-bottom">
+                            <span class="product-price"></span>
+                            <a href="contact.html" class="product-link">Enquire <span>→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="fashion" data-name="casual sneakers">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+                             alt="Red casual sneakers" loading="lazy">
+                        <span class="product-tag">Fashion</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">FASHION</p>
+                        <h3>Casual Sneakers</h3>
+                        <p>Everyday footwear for a relaxed campus look.</p>
+                        <div class="product-bottom">
+                            <span class="product-price"></span>
+                            <a href="contact.html" class="product-link">Enquire <span>→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="books" data-name="academic books">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=900&q=85"
+                             alt="Stack of academic books" loading="lazy">
+                        <span class="product-tag">Books</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">BOOKS</p>
+                        <h3>Academic Books</h3>
+                        <p>Study materials and useful books for students.</p>
+                        <div class="product-bottom">
+                            <span class="product-price"></span>
+                            <a href="contact.html" class="product-link">Enquire <span>→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="electronics" data-name="smart watch">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85"
+                             alt="Smart watch" loading="lazy">
+                        <span class="product-tag">Electronics</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">ELECTRONICS</p>
+                        <h3>Smart Watch</h3>
+                        <p>A modern watch for everyday use and activity tracking.</p>
+                        <div class="product-bottom">
+                            <span class="product-price"></span>
+                            <a href="contact.html" class="product-link">Enquire <span>→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="fashion" data-name="backpack">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85"
+                             alt="Student backpack" loading="lazy">
+                        <span class="product-tag">Fashion</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">FASHION</p>
+                        <h3>Student Backpack</h3>
+                        <p>A practical bag for books, laptops and daily essentials.</p>
+                        <div class="product-bottom">
+                            <span class="product-price"></span>
+                            <a href="contact.html" class="product-link">Enquire <span>→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="services" data-name="graphic design service">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=900&q=85"
+                             alt="Creative graphic design workspace" loading="lazy">
+                        <span class="product-tag">Services</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">SERVICES</p>
+                        <h3>Graphic Design</h3>
+                        <p>Creative designs for presentations, projects and events.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">Request a quote</span>
+                            <a href="contact.html" class="product-link">Enquire <span>→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="no-products" id="no-products" hidden>No products match your search. Try another keyword or category.</p>
+            <p class="marketplace-note">
+                <strong>Note:</strong> These are just samples of what you can get. send a message to get your exact order.
+            </p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+            <span class="eyebrow light-eyebrow">HAVE SOMETHING TO OFFER?</span>
+            <h2>Let your campus discover what you do.</h2>
+            <p>Get in touch with us to learn more about the marketplace.</p>
+            <a href="contact.html" class="btn btn-light">Contact Us</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="index.html">
+                <img src="images/campus-connect-logo.svg" alt="Campus Connect">
+            </a>
+            <p>Connecting students to people, ideas and opportunities.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="about.html">About Us</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="community.html">Community</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Discover</h3>
+            <a href="events.html">Events</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <p>&copy; <span class="current-year">2026</span> Campus Connect. Designed and Developed by Daniel Oshadare. All rights reserved.</p>
+        <p>Built to bring campus life closer.</p>
+    </div>
+</footer>
+
+</body>
+</html>
