@@ -1,0 +1,19 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" role="img" aria-labelledby="title">
+  <title id="title">Campus Connect</title>
+  <defs>
+    <linearGradient id="cc-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20c6ad"/>
+      <stop offset="100%" stop-color="#1687b9"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="3" y="3" width="94" height="94" rx="27" fill="#102b46"/>
+  <path d="M25 42 50 25 75 42 50 58Z" fill="#fff"/>
+  <path d="M34 48v13c0 8 32 8 32 0V48" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M50 58v15" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M17 75c9 9 21 14 33 14s24-5 33-14" fill="none" stroke="url(#cc-gradient)" stroke-width="6" stroke-linecap="round"/>
+
+  <text x="115" y="47" font-family="Arial, sans-serif" font-size="37" font-weight="700" fill="#102b46">Campus</text>
+  <text x="115" y="83" font-family="Arial, sans-serif" font-size="37" font-weight="700" fill="#1687b9">Connect</text>
+</svg>
